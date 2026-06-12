@@ -1,6 +1,6 @@
 # Agent scripts
 
-Run commands from the `agent_code/` directory.
+Run commands from the `agent_code/` directory. For hardware assembly and servo setup, see the [root README](../README.md).
 
 Install dependencies with `pip install -r requirements.txt`. **ale-py 0.12+** is required (older versions return action IDs differently and break `sim_env`).
 

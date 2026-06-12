@@ -16,7 +16,7 @@ import random
 
 
 class Agent:
-    """Agent that picks a uniform random action on every frame. For smoke testing."""
+    """Agent that picks a uniform random action on every frame. For testing the stack."""
 
     def __init__(self, seed, num_actions, total_frames, device='cuda', **kwargs):
         random.seed(seed)

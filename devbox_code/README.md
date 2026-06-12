@@ -1,20 +1,49 @@
 # Devbox Setup
 
+Order of operations:
+
+1. Flash the OS and insert the SD card (the microSD slot is not accessible after assembly).
+2. Assemble the Devbox chassis.
+3. Clone this repository and build `PhysicalALE`.
+
 Runs on a Raspberry Pi devbox: builds and runs the Stella-based Atari emulator (`PhysicalALE`) with AprilTag overlays and GPIO input.
 
-## Prerequisites
+## Flash Raspberry Pi OS
 
-- Raspberry Pi OS Full (Debian 13 "trixie") — fresh install
-- Clone this repository, then work from the `devbox_code` directory
+Use a fresh install of **Raspberry Pi OS Full** (Debian 13 "trixie", 64-bit). Do not upgrade from Bookworm in place — flash a clean image.
 
-## Install dependencies
+1. Download and install [Raspberry Pi Imager](https://www.raspberrypi.com/software/) on your computer.
+2. Insert the Devbox microSD card (or connect the Pi's storage via USB).
+3. In Imager:
+   - **Choose Device** → **Raspberry Pi 5**
+   - **Choose OS** → **Raspberry Pi OS (other)** → **Raspberry Pi OS Full (64-bit)**
+   - **Choose Storage** → your microSD card
+4. Open **OS Customisation** (gear icon) and set hostname, user, password, locale, and Wi‑Fi if needed. Enable SSH if you plan to set up headlessly.
+5. Click **Write**, then insert the card into the Pi.
+
+Insert the SD card **before** assembling the chassis — the slot is not accessible afterward.
+
+## Assemble the Devbox
+
+Follow the [Devbox assembly guide](https://keenagi.com/research/physical-atari/devbox.html).
+
+## Install software
+
+On the assembled Devbox, clone this repository and work from the `devbox_code` directory.
+
+Update the system:
 
 ```sh
-sudo apt update
+sudo apt update && sudo apt full-upgrade -y
+```
+
+Install build dependencies:
+
+```sh
 sudo apt install -y libsdl2-dev libgpiod-dev cmake build-essential pkg-config
 ```
 
-## Build and install
+Build and install `PhysicalALE`:
 
 ```sh
 cd devbox_code

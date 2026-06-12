@@ -1,10 +1,10 @@
 # input_output_cpp_library
 
-I/O layer for the physical Atari setup: camera capture, AprilTag detection, and RoboTroller servo actions. The primary deliverable is the `robotroller` Python module, which exposes `PhysicalAtariEnv` (used by RL training), `Camera`, and `Robotroller`.
+I/O layer for the physical Atari setup: camera capture, AprilTag detection, and Robotroller servo actions. The primary deliverable is the `robotroller` Python module, which exposes `PhysicalAtariEnv` (used by RL training), `Camera`, and `Robotroller`.
 
-**Prerequisite:** Servos must be assigned IDs 50, 51, and 52 before use. See [Hardware setup](../README.md#hardware-setup) in the root README.
+**Prerequisites:** Build the Robotroller hardware and assign servo IDs 50, 51, and 52 — see [Hardware setup](../README.md#hardware-setup) in the root README.
 
-For hardware config, smoke tests, and training scripts, see [agent_code/README.md](../agent_code/README.md).
+For hardware config, tests, and training scripts, see [agent_code/README.md](../agent_code/README.md).
 
 ## 1. Install dependencies
 
