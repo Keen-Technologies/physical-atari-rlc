@@ -1,0 +1,117 @@
+{
+  "exp_name": [
+    "action_input_sim"
+  ],
+  "checkpoint_dir": [
+    "./checkpoints"
+  ],
+  "module_name": [
+    "agents.agent_action_input"
+  ],
+  "obs_size": [
+    128
+  ],
+  "obs_channels": [
+    3
+  ],
+  "base_channels": [
+    24
+  ],
+  "policy_skip": [
+    2
+  ],
+  "train_skip": [
+    4
+  ],
+  "observation_ema_log2": [
+    -3
+  ],
+  "momentum": [
+    0.9
+  ],
+  "lr_log2": [
+    -14
+  ],
+  "lr_linear_log2": [
+    -17
+  ],
+  "explore_log2": [
+    -6
+  ],
+  "target_model_log2": [
+    5
+  ],
+  "train_batch": [
+    32
+  ],
+  "train_reps": [
+    1
+  ],
+  "multisteps": [
+    16
+  ],
+  "discount": [
+    0.99
+  ],
+  "online_samples": [
+    4
+  ],
+  "action_encoding": [
+    1
+  ],
+  "action_ema_rate": [
+    0.875
+  ],
+  "action_steps": [
+    4
+  ],
+  "action_layers": [
+    2
+  ],
+  "game": [
+    "pong"
+  ],
+  "seed": [
+    0
+  ],
+  "max_frames_without_reward": [
+    18000
+  ],
+  "store_weights": [
+    true
+  ],
+  "load_weights": [
+    false
+  ],
+  "delay_learning_by_steps": [
+    0
+  ],
+  "steps": [
+    300000
+  ],
+  "eval_steps": [
+    5000
+  ],
+  "device": [
+    "cpu"
+  ],
+  "train": [
+    true
+  ],
+  "fps": [
+    30
+  ],
+  "latency_model": [
+    false
+  ],
+  "latency_model_path": [
+    "./sim_env/robotroller_model_weights.npz"
+  ],
+  "env": [
+    "sim"
+  ],
+  "use_reduced_action_set": [
+    true
+  ]
+}
+

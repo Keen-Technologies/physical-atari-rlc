@@ -1,0 +1,12 @@
+# Core dependencies for robotroller_experiments
+numpy>=1.24.0
+torch>=2.0.0
+h5py>=3.8.0
+
+# Atari environment (ale-py 0.12+ required: Action enums use .value, not int())
+ale-py>=0.12.0
+gymnasium>=0.26.0
+
+# For Atari ROM support (optional, install separately if needed)
+# gym[atari,accept-rom-license]
+
