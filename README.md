@@ -1,6 +1,4 @@
-# Physical Atari RLC
-
-**[Physical Atari: A Robust and Accessible Platform for Real-time Reinforcement Learning on Robots](https://keenagi.com/research/physical-atari/)**  
+# **[Physical Atari: A Robust and Accessible Platform for Real-time Reinforcement Learning on Robots](https://keenagi.com/research/physical-atari/)**  
 Khurram Javed, Joseph Modayil, Gloria Kennickell, Richard S. Sutton, John Carmack
 
 
