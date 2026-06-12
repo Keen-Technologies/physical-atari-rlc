@@ -115,6 +115,9 @@
   ],
   "light_environment": [
     "relax"
+  ],
+  "robotroller_config_path": [
+    "./physical_atari_configs/physical_atari_sample_config.json"
   ]
 }
 

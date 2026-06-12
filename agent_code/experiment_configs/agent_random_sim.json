@@ -1,0 +1,41 @@
+{
+  "module_name": [
+    "agents.agent_random"
+  ],
+  "game": [
+    "pong"
+  ],
+  "seed": [
+    0
+  ],
+  "steps": [
+    5000
+  ],
+  "eval_steps": [
+    1000
+  ],
+  "device": [
+    "cpu"
+  ],
+  "env": [
+    "sim"
+  ],
+  "fps": [
+    30
+  ],
+  "latency_model": [
+    false
+  ],
+  "max_frames_without_reward": [
+    18000
+  ],
+  "use_reduced_action_set": [
+    true
+  ],
+  "store_weights": [
+    false
+  ],
+  "load_weights": [
+    false
+  ]
+}

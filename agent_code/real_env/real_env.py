@@ -36,10 +36,10 @@ class RealEnv:
     def __init__(
         self,
         game,
+        config_path,
         seed=0,
         latency_model=None,
         max_frames_without_reward=18_000,
-        config_path=os.path.expanduser("~/robotroller.conf"),
         exp_name="",
         use_reduced_action_set=False
     ):
@@ -48,10 +48,10 @@ class RealEnv:
 
         Args:
             game (str): Name of the Atari game (e.g., "pong", "breakout")
+            config_path (str): Path to robotroller config with camera and robot settings
             seed (int): Random seed for reproducibility
             latency_model: Optional latency model (not used in physical env, kept for interface compatibility)
             max_frames_without_reward (int): Truncate episode after this many frames without reward
-            config_path (str): Path to robotroller.conf file with camera and robot settings (default: ~/robotroller.conf)
             exp_name (str): Experiment name (kept for interface compatibility)
             use_reduced_action_set (bool): If True, use minimal action set for the game (default: False)
         """
@@ -62,6 +62,11 @@ class RealEnv:
         self.use_reduced_action_set = use_reduced_action_set
 
         # Load configuration
+        if not os.path.isfile(config_path):
+            print(f"Error: robotroller config not found at {config_path}")
+            print("Copy physical_atari_configs/robotroller.default.json to your config path, or set robotroller_config_path in your experiment config.")
+            raise FileNotFoundError(config_path)
+
         with open(config_path, "r") as f:
             config = json.load(f)
 

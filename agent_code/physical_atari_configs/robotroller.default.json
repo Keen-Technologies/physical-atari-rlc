@@ -1,0 +1,32 @@
+{
+  "camera": {
+    "device": "/dev/video0",
+    "target_fps": 60,
+    "width": 1280,
+    "height": 720,
+    "focus": 370,
+    "zoom": 100,
+    "fps": 30,
+    "exposure": 20,
+    "brightness": 128,
+    "contrast": 128
+  },
+  "robot": {
+    "serial_port": "/dev/serial/by-id/usb-1a86_USB_Single_Serial_58FA082095-if00",
+    "baud_rate": 1000000,
+    "D_gain": 0,
+    "I_gain": 0,
+    "P_gain": 4500,
+    "dpad_servo_default": 2030,
+    "dpad_servo_right": 2105,
+    "dpad_servo_left": 1905,
+    "dpad_servo_up": 2130,
+    "dpad_servo_down": 1925,
+    "button_servo_default": 2000,
+    "button_deflection": 1940
+  },
+  "transformation": {
+    "output_width": 1280,
+    "output_height": 720
+  }
+}
