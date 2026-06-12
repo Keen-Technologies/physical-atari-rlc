@@ -39,17 +39,17 @@ cp ~/robotroller.conf physical_atari_configs/physical_atari_sample_config.json
 
 ## agent_random
 
-Smoke-test the sim or physical stack with random actions (replaces the old `test_python.py` hardware test). The agent picks a new uniform random action every frame; no training or weight checkpoints are saved (`store_weights: false` in the random experiment configs).
+Test the sim or physical stack with random actions (replaces the old `test_python.py` hardware test). The agent picks a new uniform random action every frame; no training or weight checkpoints are saved (`store_weights: false` in the random experiment configs).
 
 For physical runs, set up your robotroller config first (see **Robotroller config** above).
 
-Sim smoke test:
+Sim test:
 
 ```bash
 python learn_policy.py --config experiment_configs/agent_random_sim.json --run 0
 ```
 
-Physical smoke test (launch the game on the devbox first, e.g. `PhysicalALE ./games/ pong`):
+Physical test (launch the game on the devbox first, e.g. `PhysicalALE ./games/ pong`):
 
 ```bash
 python learn_policy.py --config experiment_configs/agent_random_real.json --run 0

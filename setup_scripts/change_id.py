@@ -34,7 +34,7 @@ def main():
     parser.add_argument('--new_id', type=int, required=True,
                         help='New ID to set for the servo')
     parser.add_argument('--baud_rate', type=int, required=True,
-                        help='Baud rate (e.g., 1000000)')
+                        help='Current baud rate for communication with the servo (57600 for factory-default XC330)')
     
     args = parser.parse_args()
     
