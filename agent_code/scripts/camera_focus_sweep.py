@@ -14,7 +14,7 @@
 # limitations under the License.
 
 """
-focus.py - Record video while sweeping through focus values
+camera_focus_sweep.py - Record video while sweeping through focus values
 
 Records a ~80 second video while changing focus from 200 to 600 in steps of 10.
 Focus changes every 2 seconds, allowing visual inspection of different focus values.
