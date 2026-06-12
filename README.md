@@ -1,6 +1,8 @@
 # Physical Atari RLC
 
-Software for training RL agents on a physical Atari setup: a **Devbox** (Raspberry Pi emulator with AprilTag overlays) and a **Robotroller** (camera + servo-driven joystick) controlled from an agent machine.
+**[Physical Atari: A Robust and Accessible Platform for Real-time Reinforcement Learning on Robots](https://keenagi.com/research/physical-atari/)**  
+Khurram Javed, Joseph Modayil, Gloria Kennickell, Richard S. Sutton, John Carmack
+
 
 ## Overview
 
