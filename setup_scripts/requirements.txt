@@ -1,0 +1,1 @@
+dynamixel_sdk>=3.7.0
