@@ -39,6 +39,8 @@ source ~/.bashrc
 
 ## 2. Build and install
 
+Build from the same Python environment you will use for training — `cmake` installs the module into the active `python` interpreter's site-packages.
+
 ```bash
 cd input_output_cpp_library
 mkdir -p build && cd build

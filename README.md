@@ -67,7 +67,7 @@ Before using the physical environment, configure each Dynamixel XC330 servo. Fac
 Configure one servo at a time (only one device on the bus during programming):
 
 1. Connect a USB serial adapter to the **agent machine** (not the Devbox).
-2. Install dependencies: `pip install -r setup_scripts/requirements.txt`
+2. Install dependencies: from the repository root, `pip install -r setup_scripts/requirements.txt`
 3. Find the serial port: `ls /dev/serial/by-id/`
 4. Connect **one** servo and power it.
 5. Assign the target ID with [`setup_scripts/change_id.py`](setup_scripts/change_id.py) (use `--baud_rate 57600` for factory-default servos).
@@ -96,3 +96,4 @@ Once all three servos are configured, connect them together on the same bus. Set
 | [`devbox_code/`](devbox_code/) | Devbox emulator (`PhysicalALE`) ([README](devbox_code/README.md)) |
 | [`input_output_cpp_library/`](input_output_cpp_library/) | Camera, AprilTag, and servo I/O (`robotroller` module) ([README](input_output_cpp_library/README.md)) |
 | [`setup_scripts/`](setup_scripts/) | Dynamixel servo ID and baud rate configuration |
+| [`3d_model_files/`](3d_model_files/) | Printable STLs, Blender/Fusion archives, and exchange formats for Devbox and Robotroller |

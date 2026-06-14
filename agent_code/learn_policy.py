@@ -52,7 +52,7 @@ BENCHMARK_KEYS = {
     'train', 'seed', 'module_name', 'device', 'load_model', 'save_model',
     'store_weights', 'exp_name', 'checkpoint_dir', 'checkpoint_load_path',
     'max_frames_without_reward', 'latency_model', 'latency_model_path', 'env', 'eval_steps',
-    'fps', 'light_environment', 'use_reduced_action_set',
+    'fps', 'use_reduced_action_set',
     'load_weights', 'delay_learning_by_steps', 'robotroller_config_path',
 }
 
@@ -331,7 +331,7 @@ def typed_value(s):
 def main(argv):
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", type=str, help="Path to config file")
-    parser.add_argument("--run", type=int, default=1, help="Run number (int)")
+    parser.add_argument("--run", type=int, default=0, help="Run number (int)")
     parser.add_argument("--gpu", type=str, help="GPU device ID to use (sets CUDA_VISIBLE_DEVICES)")
     args = parser.parse_args()
 

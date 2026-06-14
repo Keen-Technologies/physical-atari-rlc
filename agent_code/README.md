@@ -6,6 +6,8 @@ Install dependencies with `pip install -r requirements.txt`. **ale-py 0.12+** is
 
 Training runs save checkpoints to local directories (see `checkpoint_dir` in experiment configs).
 
+For visualization and camera tools, see [scripts/README.md](scripts/README.md).
+
 ## Robotroller config
 
 Physical runs need a machine-specific robotroller config (camera and servo settings). Config files live under `agent_code/physical_atari_configs/`:
@@ -84,6 +86,8 @@ PhysicalALE ./games/ pong
 # On agent machine
 python learn_policy.py --config experiment_configs/agent_action_input_real.json --run 0
 ```
+
+The default real config (`experiment_configs/agent_action_input_real.json`) sets `device` to `cuda`. Change it to `cpu` in that JSON if you do not have a CUDA GPU.
 
 ---
 

@@ -64,7 +64,7 @@ BENCHMARK_KEYS = {
     'train', 'seed', 'module_name', 'device', 'load_model', 'save_model',
     'store_weights', 'exp_name', 'checkpoint_dir', 'checkpoint_load_path',
     'max_frames_without_reward', 'latency_model', 'latency_model_path', 'env', 'eval_steps',
-    'fps', 'light_environment', 'use_reduced_action_set',
+    'fps', 'use_reduced_action_set',
     'load_weights', 'delay_learning_by_steps', 'robotroller_config_path',
 }
 

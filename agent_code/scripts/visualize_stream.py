@@ -38,7 +38,7 @@ def main():
     parser = argparse.ArgumentParser(description="Record agent observations from environment")
     parser.add_argument("--env", type=str, default="real", choices=["real", "sim"],
                         help="Environment type: 'real' for physical hardware, 'sim' for simulator (default: real)")
-    parser.add_argument("--config", type=str, required=True,
+    parser.add_argument("--config", type=str, default=None,
                         help="Path to robotroller config file (required for real environment)")
     parser.add_argument("--game", type=str, default="pong",
                         help="Game name (e.g., pong, breakout)")
@@ -60,6 +60,9 @@ def main():
                         help="Disable text overlays on frames (no reward, frame count, etc.)")
     
     args = parser.parse_args()
+
+    if args.env == "real" and not args.config:
+        parser.error("--config is required when --env is real")
 
     # Initialize environment
     print(f"[visualize_stream] Initializing {args.env} environment for game: {args.game}")

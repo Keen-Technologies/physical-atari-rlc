@@ -57,7 +57,7 @@ sudo make install   # installs PhysicalALE to /usr/local/bin
 
 We do not ship ROM files in this repository. You must place supported Atari 2600 ROMs in a directory (e.g. `./games/`) before running `PhysicalALE`.
 
-The easiest way to get them is via [ale_py](https://github.com/Farama-Foundation/Arcade-Learning-Environment), which bundles supported ROMs in the pip package (ale-py 0.11+):
+The easiest way to get them is via [ale_py](https://github.com/Farama-Foundation/Arcade-Learning-Environment), which bundles supported ROMs in the pip package (ale-py 0.12+):
 
 ```sh
 pip install ale-py
